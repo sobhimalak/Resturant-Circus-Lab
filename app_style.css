@@ -1,0 +1,1438 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000000;
+    color: #fff;
+    /* background-image: url('img/girl_acrobat.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    /* width: 100%; */
+    /* height: 300px; */
+}
+
+
+/*  ------ image style ---------- */
+
+.background-image-container {
+    overflow: hidden;
+    justify-content: center;
+    background-color: red;
+    object-fit: cover;
+}
+
+.background-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    background-color: rgba(126, 118, 118, 0.699);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .2;
+}
+
+.text-container {
+    /* margin-bottom: 20em; */
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.text-container span {
+    color: #61892f;
+}
+
+
+/* --------------Button style -------------- */
+
+.btn-menu {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+    line-height: 1;
+    color: white;
+    border: 2px solid #86C232;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.btn-menu:hover {
+    background: #61892f;
+    color: #fff;
+}
+
+.remove-btns {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+
+/* --IPAD -- If the screen size is 700px wide or more*/
+
+@media screen and (min-width: 700px) {
+    .text-container {
+        top: 70%;
+    }
+    .text-container h1 {
+        font-size: 50px;
+        font-weight: 550;
+        line-height: 56px;
+        /* width: 20em; */
+    }
+    .text-container h2 {
+        /* margin-bottom: 10px 0 0 0; */
+        font-size: 22px;
+    }
+    .btns {
+        margin-top: 60px;
+    }
+    .fa {
+        font-size: 20px;
+    }
+    .add-btns .btns {
+        position: absolute;
+        right: 5%;
+        bottom: 50%;
+    }
+    .remove-btns .btns {
+        position: absolute;
+        left: 5%;
+        bottom: 50%;
+    }
+}
+
+
+/* --IPHONE -- If the screen size is 699px wide or less*/
+
+@media screen and (max-width: 699px) {
+    .text-container {
+        top: 60%;
+    }
+    .text-container h1 {
+        font-size: 24px;
+        font-weight: 550;
+        line-height: 56px;
+        /* width: 20em; */
+    }
+    .text-container h2 {
+        /* margin-bottom: 10px 0 0 0; */
+        font-size: 18px;
+    }
+    .btn-menu {
+        padding: 10px 10px;
+    }
+    .btns {
+        margin-top: 90px;
+    }
+    .fa {
+        font-size: 16px;
+    }
+    .add-btns .btns {
+        position: absolute;
+        right: 5%;
+        bottom: 50%;
+    }
+    .remove-btns .btns {
+        position: absolute;
+        left: 5%;
+        bottom: 50%;
+    }
+}
+
+
+/* =================================================================
+                             HOME PAGE      
+=================================================================*/
+
+.grid-container {
+    margin-top: -140px;
+    /* padding-top: 100px; */
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50% 25% 25%;
+}
+
+.grid-item {
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    /* padding: 20px; */
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.grid-top {
+    grid-column: 1/3;
+}
+
+
+/* ------next show event ------ */
+
+.show-description-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 40%;
+    background-color: rgba(42, 68, 8, 0.507);
+}
+
+.show-description-container h1 {
+    padding-top: 30px;
+    text-align: left;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+.show-description-container h2 {
+    /* padding-top: 70px; */
+    font-size: 1em;
+    text-align: center;
+}
+
+.show-image,
+.event-image {
+    /* grid-area: photo; */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.small-grid-description {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    /* background-color: rgba(68, 8, 8, 0.753); */
+    text-align: center;
+}
+
+.small-grid-description h2 {
+    font-size: 1em;
+}
+
+.overlay-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ---shows and events color overlay ---*/
+
+.overlay-blue {
+    background-color: rgba(5, 113, 117, 0.8);
+}
+
+.overlay-grey {
+    background-color: rgba(56, 58, 56, 0.8);
+}
+
+.overlay-green {
+    background-color: rgba(12, 59, 8, 0.8);
+}
+
+.overlay-black {
+    background-color: rgba(43, 44, 43, 0.8);
+}
+
+.overlay-red {
+    background-color: rgba(66, 10, 10, 0.8);
+}
+
+.show-image:hover {
+    filter: brightness(160%);
+    transform: scale(1.3);
+    transition: transform 1s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+}
+
+.event-image:hover {
+    filter: brightness(100%);
+    transform: scale(1.2);
+}
+
+.event-image .overlay-color:hover {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    transition: transform 1s, background-color 1s, background-image 1s ease-in-out;
+}
+
+.home-icon {
+    padding: 0;
+    margin: 0;
+    height: 55px;
+    width: 80px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+}
+
+
+/* -----Customize food -------- */
+
+.customize-popup {
+    margin-top: 100px;
+    height: 50vh;
+    width: 90vw;
+    background-color: rgb(184, 214, 231);
+    position: absolute;
+    left: 5%;
+    border-radius: 40px;
+    border: rgb(189, 190, 120);
+    border-style: solid;
+    border-width: 2px;
+    z-index: 20;
+    display: none;
+}
+
+.customized-food-container {
+    margin-left: 5%;
+}
+
+.customize-text {
+    margin-top: 10%;
+    margin-top: 10%;
+    text-align: center;
+    line-height: 60px;
+}
+
+.customize-text h1 {
+    color: black;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.customize-text h2 {
+    padding-top: 5%;
+    line-height: 20px;
+    color: black;
+    font-size: 16px;
+}
+
+.customize-confirmation {
+    display: none;
+}
+
+.customize-confirmation h2 {
+    line-height: 60px;
+}
+
+.customize-confirmation h1 {
+    line-height: 60px;
+    padding-top: 20%;
+}
+
+.customize-food-container {
+    display: none;
+}
+
+#food-page .call-waiter-btn .btns {
+    bottom: 8%;
+}
+
+.ingredients-list ul li {
+    list-style-type: none;
+    color: black;
+}
+
+
+/* -----call a waiter -------- */
+
+#home-popup {
+    margin-top: 200px;
+    height: 70vh;
+    width: 90vw;
+    background-color: rgb(87, 119, 138);
+    position: fixed;
+    left: 5%;
+    border-radius: 40px;
+    border: rgb(189, 190, 120);
+    border-style: solid;
+    border-width: 2px;
+    z-index: 20;
+    display: none;
+}
+
+.waiter-text {
+    margin: 20%;
+    margin-top: 20%;
+    text-align: center;
+    line-height: 60px;
+}
+
+.waiter-text h2 {
+    padding-top: 5%;
+}
+
+.call-waiter-btn .btns {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.waiter-confirmation {
+    display: none;
+}
+
+.waiter-confirmation h2 {
+    line-height: 60px;
+}
+
+.waiter-confirmation h1 {
+    line-height: 60px;
+    padding-top: 20%;
+}
+
+.call-waiter-container {
+    display: none;
+}
+
+.become-member {
+    display: none;
+    margin: 10%
+}
+
+.membership-text h1,
+.membership-text h2 {
+    display: block;
+    text-align: justify;
+}
+
+.membership-text h2 {
+    padding-top: 10%;
+    font-size: 20px;
+}
+
+.submit-email-btn .btns {
+    position: absolute;
+    left: 50%;
+    bottom: 7%;
+    transform: translate(-50%, -50%);
+}
+
+.member-confirmation {
+    display: none;
+}
+
+form {
+    margin-top: 30px;
+    background: #222629;
+    padding: 6px 10px;
+    border-radius: 50px;
+    border: 1px solid #222629;
+    position: fixed;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+form input[type="email"] {
+    border: 0;
+    padding: 4px;
+    width: calc(100% - 110px);
+    background: #222629;
+    color: white;
+}
+
+form input[type="submit"] {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px 2px 20px;
+    background: #61892f;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+form input[type="submit"]:hover {
+    background: #61892f;
+}
+
+
+/* --IPAD -- If the screen size is 700px wide or more*/
+
+@media screen and (min-width: 700px) {}
+
+
+/* --IPHONE --If the screen size is 699px wide or less*/
+
+@media screen and (max-width: 699px) {
+    .small-grid-description h2 {
+        font-size: 0.5em;
+    }
+    .show-description-container h1 {
+        font-size: 1em;
+    }
+    .show-description-container h2 {
+        font-size: 0.5em;
+    }
+    .home-icon {
+        /* aspect ratio 16:11  */
+        height: 41px;
+        width: 60px;
+        top: 70%;
+        left: 50%;
+    }
+    .waiter-text h1 {
+        font-size: 25px;
+    }
+    .waiter-text h2 {
+        font-size: 20px;
+        padding-top: 50%;
+    }
+    .membership-text h1 {
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    .membership-text h2 {
+        font-size: 14px;
+        padding-top: 10%;
+    }
+    form {
+        transform: translate(-50%, 65%);
+    }
+    form input[type="submit"] {
+        font-size: 12px;
+    }
+}
+
+
+/* --------------------------------------------------------------
+                       NAVIGATION MENU   and    HEADER      
+--------------------------------------------------------------*/
+
+#header-container {
+    /* background: rgba(51, 50, 49, 0.6); */
+    background: rgba(31, 30, 29);
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+    /* top: 40px; */
+    height: 140px;
+}
+
+.header-scrolled {
+    top: 0;
+    background: rgba(0, 0, 0, 0.85);
+    border-bottom: 1px solid #37332a;
+}
+
+.welcome {
+    display: flex;
+}
+
+.restaurant-name {
+    float: right;
+    width: 50%;
+}
+
+.restaurant-name h1 {
+    font-size: 24px;
+    color: #61892f;
+    font-weight: bold;
+}
+
+.logo-image {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    float: right;
+    object-fit: contain;
+    z-index: 5;
+}
+
+.logo-image img {
+    width: 65px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 0.5px solid #ccc;
+    /* margin: 1em 0; */
+    padding: 0;
+}
+
+.d-flex {
+    display: block !important;
+}
+
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu>ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+    padding: 38px;
+}
+
+.nav-menu a {
+    display: flex;
+    position: relative;
+    color: white;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.nav-menu {
+    float: none;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 992px) {
+    .d-lg-block {
+        display: block!important;
+    }
+}
+
+
+/* --- nav menu on hover --- */
+
+.nav-menu a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a {
+    color: #86C232;
+}
+
+
+/* IPAD ---If the screen size is 700px wide or more*/
+
+@media screen and (min-width: 700px) {
+    .nav-menu a {
+        font-size: 22px;
+    }
+}
+
+
+/* IPHONE X --- If the screen size is 699px wide or less*/
+
+@media screen and (max-width: 699px) {
+    .nav-menu>ul>li {
+        padding: 18px;
+    }
+    #header-container {
+        height: 110px;
+    }
+    .restaurant-name h1 {
+        font-size: 16px;
+        color: #61892f;
+        font-weight: bold;
+    }
+    .welcome-guest h2 {
+        font-size: 15px;
+        color: rgb(187, 48, 48);
+    }
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+/* --------------------------------------------------------------
+                            FOOD ITEMS      
+--------------------------------------------------------------*/
+
+.top-container {
+    height: 140px;
+    width: 100%;
+}
+
+.food-item-container {
+    /* margin-top: 100px; */
+    position: relative;
+    height: 500px;
+}
+
+.food-item-container h1 {
+    font-size: 1.5em;
+}
+
+.food-item-container h2 {
+    font-size: 1em;
+}
+
+.customize-button .btns {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+
+.food-item-container .food-name {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.food-item-container .food-price {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.food-price h1,
+span {
+    display: inline;
+}
+
+.overlay-food {
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    width: 100%;
+    height: 100%;
+}
+
+.food-image-container {
+    position: relative;
+    z-index: -1;
+    object-fit: contain;
+}
+
+.food-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.item-quantity-big-container {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.item-quantity-big-container p {
+    font-size: 200px;
+    text-align: center;
+}
+
+.takeaway-container {
+    background-color: rgb(146, 155, 149);
+    height: 120px;
+    position: relative;
+    display: none;
+}
+
+.take-away-time {
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.takeaway-container h1 {
+    font-size: 18px;
+}
+
+.close-takeaway {
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+}
+
+
+/* IPAD ---If the screen size is 700px wide or more*/
+
+@media screen and (min-width: 700px) {
+    .nav-menu a {
+        font-size: 22px;
+    }
+}
+
+
+/* IPHONE X --- If the screen size is 699px wide or less*/
+
+@media screen and (max-width: 699px) {
+    .food-item-container h1 {
+        font-size: 1em;
+    }
+    .top-container {
+        height: 110px;
+    }
+    .food-item-container {
+        position: relative;
+        height: 300px;
+    }
+    .customize-button .btn-menu {
+        font-size: 12px;
+    }
+    .takeaway-container h1 {
+        font-size: 14px;
+    }
+    .take-away-list {
+        font-size: 10px;
+    }
+    .take-away-time {
+        margin-left: 15px;
+    }
+    .takeaway-container .btn-menu {
+        font-size: 10px;
+    }
+    .close-event-button .btn-menu {
+        padding: 7px, 8px;
+    }
+}
+
+
+/* =================================================================
+                             EVENT PAGE      
+=================================================================*/
+
+.grid-container-events {
+    position: relative;
+    display: block;
+}
+
+.event-detail {
+    height: 80vh;
+    width: 90vw;
+    background-color: rgb(155, 114, 97);
+    position: fixed;
+    left: 5%;
+    z-index: 10;
+    border-radius: 40px;
+    border: rgb(189, 190, 120);
+    border-style: solid;
+    border-width: 2px;
+    display: none;
+}
+
+.description-container {
+    text-align: left;
+    margin: 8%
+}
+
+.event-date {
+    /* position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 80%; */
+    text-align: right;
+}
+
+.close-event-button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.close-event-button a {
+    text-decoration: none;
+}
+
+.close-event-button .btns {
+    margin-top: 0;
+}
+
+.event-text-description {
+    padding-top: 8%;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.close-event-button .btn-menu {
+    padding: 10px 12px;
+}
+
+.grid-item-events {
+    /* border: 2px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;*/
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    height: 250px;
+    padding: 2px;
+    text-align: center;
+}
+
+.row-events {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+
+/* .grid-top {
+    grid-column: 1/3;
+} */
+
+.event-name {
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    transform: translate(00%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.event-type {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    width: 100%;
+    text-align: left;
+    background-image: linear-gradient(45deg, #6d0d0d, #ff6767);
+    transform: skewY(-11deg);
+}
+
+.click-event {
+    text-decoration: none;
+    color: white;
+}
+
+.grid-container-events a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#fireshow,
+#acro-familj,
+#starka-max,
+#silent-lili,
+#houdini,
+#yoyo,
+#pippi,
+#bozo {
+    display: none;
+}
+
+
+/* IPAD ---If the screen size is 700px wide or more*/
+
+@media screen and (min-width: 700px) {
+    .event-name h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .event-type h1 {
+        font-size: 30px;
+        text-transform: capitalize;
+        padding-left: 7px;
+        padding-top: 10px;
+    }
+    /* .event-date h2 {
+        font-size: 22px;
+        color: #86C232;
+    } */
+}
+
+
+/* IPHONE X --- If the screen size is 699px wide or less*/
+
+@media screen and (max-width: 699px) {
+    .grid-container-events {
+        padding-top: 0px;
+    }
+    .event-type h1 {
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+    .event-name h1 {
+        font-size: 20px;
+        text-align: center;
+        padding-left: 7px;
+        padding-top: 5px;
+    }
+    .grid-item-events {
+        height: 200px
+    }
+}
+
+
+/* =================================================================
+                             PULL UP ORDER     
+=================================================================*/
+
+#order-popup {
+    display: none;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    position: relative;
+}
+
+.order-box {
+    background-color: #86C232;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.order-symbol {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+}
+
+#order-popup h1,
+#allergy-container h1 {
+    font-size: 16px;
+    margin-left: 31px;
+}
+
+#order-popup .content_w {
+    background-color: #eee;
+    overflow: hidden;
+    height: 0;
+}
+
+#order-popup .content_w.transition {
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+section.entries .content-order {
+    padding-top: 1em;
+    line-height: 1.3;
+}
+
+.content-order {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+}
+
+#order-popup ul,
+#allergy-container ul {
+    color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 2.5;
+    font-size: 12px;
+}
+
+#order-popup p {
+    color: black;
+}
+
+#order-popup .customized-unit-name {
+    color: red;
+}
+
+#order-popup hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid rgb(0, 0, 0);
+    clear: both;
+}
+
+.list-item-food {
+    display: flex;
+    width: 100%;
+}
+
+.list-item-food i p {
+    flex: 50%;
+    padding: 10px;
+    margin-bottom: 0;
+    height: auto;
+}
+
+.list-item-food i {
+    width: 10%;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+
+.unit-quantity {
+    width: 5%
+}
+
+.unit-name {
+    width: 90%;
+}
+
+.total {
+    float: left;
+    width: 70%;
+}
+
+.price-container {
+    float: right;
+    display: flex;
+    color: black;
+}
+
+.total-price {
+    min-height: 100px;
+}
+
+.fa-plus-circle {
+    font-size: 20px;
+    color: green;
+}
+
+.fa-minus-circle {
+    font-size: 20px;
+    color: red;
+}
+
+.close-takeaway {
+    position: absolute;
+    top: 30%;
+    bottom: 5%;
+}
+
+
+/* submit order buttons and table code */
+
+#order-popup form {
+    transform: translate(12%, -70%);
+    position: inherit;
+    width: 80%;
+}
+
+form input[type="text"] {
+    border: 0;
+    padding: 4px;
+    width: calc(100% - 110px);
+    background: #222629;
+    color: white;
+}
+
+.order-confirmation {
+    display: none;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+}
+
+.order-confirmation .btn-menu {
+    color: black;
+}
+
+.order-confirmation h1,
+.order-confirmation h2 {
+    font-size: 32px;
+}
+
+.order-confirmation h1 {
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 28px;
+}
+
+
+/* --IPHONE --If the screen size is 699px wide or less*/
+
+@media screen and (max-width: 699px) {
+    .order-confirmation {
+        top: 50%;
+    }
+    .order-confirmation h1,
+    .order-confirmation h2 {
+        padding-left: 0;
+        margin-left: 0;
+        font-size: 20px;
+    }
+}
+
+
+/* allergies container */
+
+#allergy-container {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(184, 93, 93);
+    z-index: 20;
+    height: auto;
+}
+
+.allergy-box {
+    /* height: auto; */
+    background-color: rgb(145, 61, 61);
+    display: flex;
+    position: relative;
+}
+
+#allergy-container .content_w {
+    overflow: hidden;
+    height: 0;
+}
+
+#allergy-container .content_w.transition {
+    transition: height 0.5s;
+}
+
+#allergy-container .content-allergy {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#allergy-container .content-allergy h1 {
+    margin-left: 0;
+}
+
+.diet-list-container {
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.diet-list-container h1 {
+    font-size: 18px;
+}
+
+.diet-list li {
+    font-size: 14px;
+    color: white;
+    padding-left: 30px;
+}
+
+
+/* slider in allergies */
+
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    left: 70%;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 7px;
+    left: 0;
+    right: 8px;
+    bottom: -7px;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #149940;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #149940;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* section style when clicking on nav button */
+
+
+/* #landing-page  */
+
+#home-page {
+    display: none;
+}
+
+#food-page {
+    display: none;
+}
+
+#drinks-page {
+    display: none;
+}
+
+#events-page {
+    display: none;
+}
+
+#header {
+    display: none;
+}
+
+.name-details h2 {
+    padding-bottom: 12px;
+}
+
+.name-details h1 {
+    padding-top: 20px;
+}
+
+.member-confirmation .waiter-text {
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+
+/* IPHONE X --- If the screen size is 699px wide or less*/
+
+@media screen and (max-width: 699px) {
+    .event-detail .name-details h1,
+    .event-detail .name-details h2 {
+        font-size: 25px;
+    }
+    .event-detail .name-details h1 {
+        padding-top: 35px;
+    }
+    .event-detail .name-details h2 {
+        font-size: 25px;
+    }
+    .event-detail .name-details .event-date {
+        font-size: 14px;
+    }
+    .event-detail .event-text-description {
+        font-size: 12px;
+    }
+}
+
+
+/* --IPHONE --If the screen size is 699px wide or less*/
+
+@media screen and (max-width: 699px) {
+    .customize-popup .btn-menu {
+        font-size: 9px;
+    }
+    .ingredients-list ul li {
+        font-size: 16px;
+    }
+    .ingredients-list {
+        padding-top: 5px;
+    }
+    .customize-popup .btns {
+        transform: translate(-50%, 10%);
+    }
+    .customize-text {
+        padding-top: 8%;
+    }
+    .food-item-container .call-waiter-btn .btns {
+        bottom: 5%
+    }
+}
+
+
+/* --IPHONE --If the screen size is 699px wide or less*/
+
+@media screen and (max-width: 699px) {
+    #order-popup input {
+        font-size: 12px;
+    }
+    .name-details h2 {
+        padding-top: 0%;
+    }
+    .name-details h1 {
+        padding-top: 0px;
+    }
+    .waiter-confirmation .waiter-text {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .food-image-container .name-details h2 {
+        font-size: 16px;
+    }
+    .become-member .name-details h1,
+    .member-confirmation .name-details h1 {
+        padding-top: 50px;
+    }
+    .become-member .name-details h2 {
+        padding-top: 10%;
+    }
+    .member-confirmation .name-details h2 {
+        padding-top: 10%;
+    }
+}
